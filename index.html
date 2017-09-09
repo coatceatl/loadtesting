@@ -40,14 +40,46 @@
               <span class="login-links">
                 <a href="#">SIGN UP</a>
                 <i>/</i>
-                <a href="#">LOG IN</a>
+                <a data-toggle="modal" href="#myModal">LOG IN</a>
               </span>
             </li>
             <form class="navbar-form pull-right">
-              <input type="text" class="span2 search-query" placeholder="search" />
+              <input ttype="text" class="span2 search-query" placeholder="search">
             </form>
           </ul>
         </div>
+
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal"&times;<button>
+                    <h4>LOG IN</h4>
+                  </div>
+                  <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form">
+                    <div class="form-group">
+                      <label for="usrname">Email</label>
+                      <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="psw">Password</label>
+                      <input type="password" class="form-control" id="psw" placeholder="Enter password">
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" checked>Remember me</label>
+                    </div>
+                      <button type="submit" class="btn btn-success btn-block">LOG IN</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss=
+                  "modal">Cancel</button>
+                  <p><a href="#">Forgotten password?</a></p>
+                  <p>Don't have an account? <a href="#">SIGN UP</a></p>
+                </div>
+              </div>
+            </div>
       </nav>
     </div>
     </nav>

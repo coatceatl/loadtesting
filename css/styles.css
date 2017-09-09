@@ -76,3 +76,13 @@ li.dropdown {
   text-align: center;
 }
 
+.modal-header, h4, .close {
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-footer {
+  background-color: #f9f9f9;
+}
